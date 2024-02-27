@@ -1,0 +1,195 @@
+<!-- <ul class="navbar-nav bg-gradient-warning sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" [routerLink]="['/admin/dashboard']" style="background-color: #f00;">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-user-shield"></i>
+        </div>
+        <div class="sidebar-brand-text mx-2">MTA SHOP</div>
+    </a>
+
+
+    <hr class="sidebar-divider my-0">
+
+    <li class="nav-item {{pageActive=='dashboard'?'active':''}}">
+        <a class="nav-link" [routerLink]="['/admin/dashboard']">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Trang chủ</span></a>
+    </li>
+    <hr class="sidebar-divider">
+    <div class="sidebar-heading">
+        Quản lý
+    </div>
+
+    <li class="nav-item {{pageActive=='customer'?'active':''}}">
+        <a class="nav-link" [routerLink]="['/admin/customer']">
+            <i class="fas fa-user fa-chart-area"></i>
+            <span>Khách hàng</span></a>
+    </li>
+    <li class="nav-item {{pageActive=='order'?'active':''}}">
+        <a class="nav-link" [routerLink]="['/admin/order']">
+            <i class="fas fa-shopping-bag fa-chart-area"></i>
+            <span>Đơn hàng</span></a>
+    </li>
+    <li class="nav-item {{pageActive=='product'?'active':''}}">
+        <a class="nav-link" [routerLink]="['/admin/product']">
+            <i class="fas fa-table fa-chart-area"></i>
+            <span>Sản phẩm</span></a>
+    </li>
+    <li class="nav-item {{pageActive=='category'?'active':''}}">
+        <a class="nav-link" [routerLink]="['/admin/category']">
+            <i class="fas fa-table fa-chart-area"></i>
+            <span>Loại sản phẩm</span></a>
+    </li>
+
+    <li class="nav-item {{pageActive=='rate'?'active':''}}">
+        <a class="nav-link" [routerLink]="['/admin/rate']">
+            <i class="fas fa-star-half-alt"></i>
+            <span>Đánh giá của khách hàng</span></a>
+    </li>
+
+    <hr class="sidebar-divider">
+
+    <div class="sidebar-heading">
+        Thống kê
+    </div>
+
+    <li class="nav-item {{pageActive=='category-best-seller'?'active':''}}">
+        <a class="nav-link" [routerLink]="['/admin/statistical-category']">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Danh mục bán chạy</span></a>
+    </li>
+
+    <li class="nav-item {{pageActive=='soldest'?'active':''}}">
+        <a class="nav-link" [routerLink]="['/admin/soldest']">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Sản phẩm bán chạy</span></a>
+    </li>
+
+    <li class="nav-item {{pageActive=='inventory'?'active':''}}">
+        <a class="nav-link" [routerLink]="['/admin/inventory']">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Hàng tồn kho</span></a>
+    </li>
+</ul> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="navbar-nav bg-gradient-warning sidebar sidebar-dark accordion" id="accordionSidebar">
+    <div class="side">
+
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" [routerLink]="['/admin/dashboard']"
+            style="background-color: #f00;">
+            <div class="sidebar-brand-icon rotate-n-15">
+                <i class="fas fa-user-shield"></i>
+            </div>
+            <div class="sidebar-brand-text mx-2">MTA SHOP</div>
+        </a>
+
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne" style="background-color:#ff0; color: #000; padding: 0px;">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne" style="background-color:#ff0; width: 100%;">
+                            <div style="background-color:#ff0 ;color: #000; padding: 12px 20px;">QUẢN LÝ
+                            </div>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" style="background-color: #f00;">
+                    <div class="card-body" style="padding: 0px;">
+                        <div class="nav-item {{pageActive=='customer'?'active':''}}">
+                            <a class="nav-link" [routerLink]="['/admin/customer']">
+                                <i class="fas fa-user fa-chart-area"></i>
+                                <span>Khách hàng</span></a>
+                        </div>
+
+                        <div class="nav-item {{pageActive=='order'?'active':''}}">
+                            <a class="nav-link" [routerLink]="['/admin/order']">
+                                <i class="fas fa-shopping-bag fa-chart-area"></i>
+                                <span>Đơn hàng</span></a>
+                        </div>
+                        <div class="nav-item {{pageActive=='product'?'active':''}}">
+                            <a class="nav-link" [routerLink]="['/admin/product']">
+                                <i class="fas fa-table fa-chart-area"></i>
+                                <span>Sản phẩm</span></a>
+                        </div>
+                        <div class="nav-item {{pageActive=='category'?'active':''}}">
+                            <a class="nav-link" [routerLink]="['/admin/category']">
+                                <i class="fas fa-table fa-chart-area"></i>
+                                <span>Loại sản phẩm</span></a>
+                        </div>
+                        <div class="nav-item {{pageActive=='rate'?'active':''}}">
+                            <a class="nav-link" [routerLink]="['/admin/rate']">
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>Đánh giá của khách hàng</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card" style="border-color: #f00;">
+                <div class="card-header" id="headingTwo" style="background-color:#ff0 ;color: #000; padding: 0px;">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                            aria-controls="collapseOne" style="background-color:#ff0; width: 100%;">
+                            <div style="background-color:#ff0 ;color: #000; padding: 12px 20px;">THỐNG KÊ
+                            </div>
+                        </button>
+                    </h5>
+                </div>
+            
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion" style=" background-color: #f00;">
+                    <div class="card-body" style="padding: 0px;">
+                        <div class="nav-item {{pageActive=='customer'?'active':''}}">
+                            <a class="nav-link" [routerLink]="['/admin/statistical-category']">
+                                <i class="fas fa-user fa-chart-area"></i>
+                                <span>Danh mục bán chạy</span></a>
+                        </div>
+            
+                        <div class="nav-item {{pageActive=='order'?'active':''}}">
+                            <a class="nav-link" [routerLink]="['/admin/soldest']">
+                                <i class="fas fa-shopping-bag fa-chart-area"></i>
+                                <span>Sản phẩm bán chạy</span></a>
+                        </div>
+                        <div class="nav-item {{pageActive=='product'?'active':''}}">
+                            <a class="nav-link" [routerLink]="['/admin/inventory']">
+                                <i class="fas fa-table fa-chart-area"></i>
+                                <span>Hàng tồn kho</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
