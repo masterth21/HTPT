@@ -27,5 +27,9 @@ public class Notification implements Serializable {
 	private String message;
 	private Date time;
 	private Boolean status;
+//	public Long getId() {
+//		// TODO Auto-generated method stub
+//		return id;
+//	}
 
 }

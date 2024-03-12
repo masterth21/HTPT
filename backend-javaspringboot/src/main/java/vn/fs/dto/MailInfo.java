@@ -22,4 +22,8 @@ public class MailInfo {
 		this.body = body;
 	}
 
+//	public String getAttachments() {
+//	    return attachments;
+//	}
+
 }

@@ -24,6 +24,12 @@ import vn.fs.common.ERole;
 @Table(name = "appRoles")
 public class AppRole implements Serializable {
 
+//	public AppRole(int id2, Object name2) {
+//		// TODO Auto-generated constructor stub
+//		this.id = id2;
+//	    this.name = (ERole) name; // Ép kiểu Object thành ERole
+//	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public Integer id;
@@ -31,5 +37,8 @@ public class AppRole implements Serializable {
 	@Enumerated(EnumType.STRING)
 	@Column(length = 20)
 	public ERole name;
+	
+	
 
 }
+

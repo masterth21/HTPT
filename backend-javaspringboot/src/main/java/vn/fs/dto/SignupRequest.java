@@ -24,4 +24,8 @@ public class SignupRequest {
 
 	private Set<String> role;
 
+//	public String getEmail() {
+//        return email;
+//    }
+
 }

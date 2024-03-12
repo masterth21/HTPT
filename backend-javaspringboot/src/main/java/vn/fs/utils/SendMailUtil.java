@@ -9,21 +9,21 @@ import org.springframework.stereotype.Service;
 
 import vn.fs.entity.Order;
 import vn.fs.entity.OrderDetail;
-import vn.fs.repository.OrderDetailRepository;
-import vn.fs.repository.OrderRepository;
-import vn.fs.service.SendMailService;
+import vn.fs.repository.OrderDetailDAO;
+import vn.fs.repository.OrderDAO;
+import vn.fs.service.SendMailBusiness;
 
 @Service
 public class SendMailUtil {
 
 	@Autowired
-	OrderRepository orderRepository;
+	OrderDAO orderRepository;
 
 	@Autowired
-	OrderDetailRepository orderDetailRepository;
+	OrderDetailDAO orderDetailRepository;
 
 	@Autowired
-	SendMailService sendMailService;
+	SendMailBusiness sendMailService;
 
 	public void sendMailOrder(Order order) {
 		SimpleDateFormat dt = new SimpleDateFormat("dd-MM-yyyy");
@@ -312,7 +312,7 @@ public class SendMailUtil {
 			+ "                            <table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:600px;\">\r\n"
 			+ "                                <tr>\r\n"
 			+ "                                    <td align=\"center\" style=\"font-family: Open sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding-top: 25px;\">\r\n"
-			+ "                                        <img src=\"https://res.cloudinary.com/dwrcr5anf/image/upload/v1687684256/mark.jpg?fbclid=IwAR2aTBpMU1Gbj8pVwuU6sH1lUAUEeK2U8df1mrI4zCyMT97OnjkEIbgBSQw\" width=\"115\" height=\"110\" style=\"display: block; border: 0px;\" /><br>\r\n"
+			+ "                                        <img src=\"https://res.cloudinary.com/veggie-shop/image/upload/v1634045009/assets/checked_pudgic.png?fbclid=IwAR2aTBpMU1Gbj8pVwuU6sH1lUAUEeK2U8df1mrI4zCyMT97OnjkEIbgBSQw\" width=\"115\" height=\"110\" style=\"display: block; border: 0px;\" /><br>\r\n"
 			+ "                                        <h2 style=\"font-size: 30px; font-weight: 800; line-height: 36px; color: #333333; margin: 0;\"> Giao hàng thành công! </h2>\r\n"
 			+ "                                        <p style=\"font-family: Open sans-serif; font-size: 18px;\"><em>Cảm ơn bạn đã tin tưởng! Chúc bạn một ngày vui vẻ!</em></p>\r\n"
 			+ "                                        <p style=\"font-family: Open sans-serif; font-size: 18px;\"><em>Hẹn gặp lại quý khách!</em></p>\r\n"
@@ -349,7 +349,7 @@ public class SendMailUtil {
 			+ "                            <table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:600px;\">\r\n"
 			+ "                                <tr>\r\n"
 			+ "                                    <td align=\"center\" style=\"font-family: Open sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding-top: 25px;\">\r\n"
-			+ "                                        <img src=\"https://res.cloudinary.com/dwrcr5anf/image/upload/v1687684256/mark.jpg?fbclid=IwAR2aTBpMU1Gbj8pVwuU6sH1lUAUEeK2U8df1mrI4zCyMT97OnjkEIbgBSQw\" width=\"115\" height=\"110\" style=\"display: block; border: 0px;\" /><br>\r\n"
+			+ "                                        <img src=\"https://res.cloudinary.com/veggie-shop/image/upload/v1634045009/assets/checked_pudgic.png?fbclid=IwAR2aTBpMU1Gbj8pVwuU6sH1lUAUEeK2U8df1mrI4zCyMT97OnjkEIbgBSQw\" width=\"115\" height=\"110\" style=\"display: block; border: 0px;\" /><br>\r\n"
 			+ "                                        <h2 style=\"font-size: 30px; font-weight: 800; line-height: 36px; color: #333333; margin: 0;\"> Xác nhận đã thanh toán thành công! </h2>\r\n"
 			+ "                                        <p style=\"font-family: Open sans-serif; font-size: 18px;\"><em>Cảm ơn bạn đã tin tưởng! Chúng tôi sẽ nhanh chóng giao hàng cho bạn!</em></p>\r\n"
 			+ "                                    </td>\r\n" + "                                </tr>\r\n"
@@ -420,7 +420,7 @@ public class SendMailUtil {
 			+ "                                <table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:600px;\">\r\n"
 			+ "                                    <tr>\r\n"
 			+ "                                        <td align=\"center\" style=\"font-family: Open sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding-top: 25px;\">\r\n"
-			+ "                                            <img src=\"https://res.cloudinary.com/dwrcr5anf/image/upload/v1687684256/mark.jpg?fbclid=IwAR2aTBpMU1Gbj8pVwuU6sH1lUAUEeK2U8df1mrI4zCyMT97OnjkEIbgBSQw\" width=\"115\" height=\"110\" style=\"display: block; border: 0px;\" /><br>\r\n"
+			+ "                                            <img src=\"https://res.cloudinary.com/veggie-shop/image/upload/v1634045009/assets/checked_pudgic.png?fbclid=IwAR2aTBpMU1Gbj8pVwuU6sH1lUAUEeK2U8df1mrI4zCyMT97OnjkEIbgBSQw\" width=\"115\" height=\"110\" style=\"display: block; border: 0px;\" /><br>\r\n"
 			+ "                                            <h2 style=\"font-size: 30px; font-weight: 800; line-height: 36px; color: #333333; margin: 0;\"> Chúc mừng đã đặt hàng thành công! </h2>\r\n"
 			+ "                                            <p style=\"font-family: Open sans-serif; font-size: 18px;\"><em>Chúng tôi sẽ tiến hành xử lý đơn hàng sớm nhất, bạn vui lòng chờ nhé!</em></p>\r\n"
 			+ "                                        </td>\r\n" + "                                    </tr>\r\n"
@@ -434,13 +434,11 @@ public class SendMailUtil {
 			+ "                                                    <td width=\"25%\" align=\"left\" bgcolor=\"#eeeeee\" style=\"font-family: Open sans-serif; font-size: 18px; font-weight: 800; line-height: 24px; padding: 10px;\">Số lượng</td>\r\n"
 			+ "                                                    <td width=\"25%\" align=\"left\" bgcolor=\"#eeeeee\" style=\"font-family: Open sans-serif; font-size: 18px; font-weight: 800; line-height: 24px; padding: 10px;\">Thành tiền</td>\r\n"
 			+ "                                                </tr>";
-	
 	static String BODY2 = "</table>\r\n" + "                                        </td>\r\n"
 			+ "                                    </tr>\r\n" + "                                    <tr>\r\n"
 			+ "                                        <td align=\"left\" style=\"padding-top: 20px;\">\r\n"
 			+ "                                            <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\" width=\"100%\">\r\n"
 			+ "                                                <tr>";
-	
 	static String BODY3 = "</tr>\r\n" + "                                            </table>\r\n"
 			+ "                                        </td>\r\n" + "                                    </tr>\r\n"
 			+ "                                </table>\r\n" + "                            </td>\r\n"
@@ -453,7 +451,6 @@ public class SendMailUtil {
 			+ "                                                <table align=\"left\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:300px;\">\r\n"
 			+ "                                                    <tr>\r\n"
 			+ "                                                        <td align=\"left\" valign=\"top\" style=\"font-family: Open sans-serif; font-size: 20px; font-weight: 400; line-height: 24px;\">";
-	
 	static String BODY4 = "</td>\r\n" + "                                                    </tr>\r\n"
 			+ "                                                </table>\r\n"
 			+ "                                            </div>\r\n"
@@ -461,7 +458,6 @@ public class SendMailUtil {
 			+ "                                                <table align=\"left\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:300px;\">\r\n"
 			+ "                                                    <tr>\r\n"
 			+ "                                                        <td align=\"left\" valign=\"top\" style=\"font-family: Open sans-serif; font-size: 20px; font-weight: 400; line-height: 24px;\">";
-	
 	static String FOOTER = "</tr>\r\n" + "                                                </table>\r\n"
 			+ "                                            </div>\r\n"
 			+ "                                        </td>\r\n" + "                                    </tr>\r\n"

@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import vn.fs.entity.User;
-import vn.fs.repository.UserRepository;
+import vn.fs.repository.UserDAO;
 
 @Controller
 @RequestMapping("/forgot-password")
 public class ResetPasswordController {
 
 	@Autowired
-	UserRepository userRepository;
+	UserDAO userRepository;
 
 	@Autowired
 	PasswordEncoder passwordEncoder;

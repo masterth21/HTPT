@@ -14,7 +14,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import vn.fs.service.implement.UserDetailsServiceImpl;
+import vn.fs.service.implement.UserDetailsBusinessImpl;
 
 @Configuration
 @EnableWebSecurity
@@ -22,7 +22,7 @@ import vn.fs.service.implement.UserDetailsServiceImpl;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
-	UserDetailsServiceImpl userDetailsService;
+	UserDetailsBusinessImpl userDetailsService;
 
 	@Autowired
 	private AuthEntryPointJwt unauthorizedHandler;

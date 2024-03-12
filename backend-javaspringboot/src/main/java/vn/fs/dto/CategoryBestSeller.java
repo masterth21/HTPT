@@ -9,6 +9,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CategoryBestSeller {
 
+//	public CategoryBestSeller(String name, Integer count, Double amount) {
+//        this.name = name;
+//        this.count = count;
+//        this.amount = amount;
+//    }
 	private String name;
 	private int count;
 	private Double amount;

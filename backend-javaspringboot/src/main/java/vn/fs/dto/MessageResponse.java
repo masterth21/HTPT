@@ -9,6 +9,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class MessageResponse {
 
+	
+//	public MessageResponse(String message) {
+//        this.message = message;
+//    }
+
 	private String message;
 
 }
